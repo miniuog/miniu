@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js string</title>
+</head>
+<body>
+    <script>
+        function przycisk()
+        {
+const tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed eros lectus. Pellentesque cursus libero et purus vestibulum congue. Maecenas imperdiet ligula eget ipsum placerat suscipit. Nam vitae pretium lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh fermentum, posuere ipsum id, pretium sem. Nam facilisis sem nisi. Nunc viverra purus nec nibh imperdiet dignissim. Vivamus risus augue, malesuada a eros et, euismod ornare felis. Aenean neque purus, auctor ut enim quis, gravida pulvinar tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque in tristique orci. Donec magna sem, euismod sed turpis ullamcorper, convallis fermentum nisl. Maecenas metus ligula, molestie quis dolor sit amet, porta pretium erat."
+ const id_a=document.getElementById('id_a').value  
+ const id_b=document.getElementById('id_b').value     
+
+//1
+console.log(tekst.length)
+//2
+console.log(tekst.charAt(id_a))
+//3
+document.write(tekst.toUpperCase())
+//4
+console.log(tekst.substr(id_a,id_b))
+//5
+const ab =tekst.replace("Lorem", "miniu")
+console.log(ab)
+document.write (tekst.replace("Lorem","miniu"))
+//6
+console.log(tekst.split('a').length-1)
+//7
+const ba=tekst.split(",")
+console.log(ba)
+//8
+
+
+}
+
+</script>
+
+<input type="number" id="id_a"><br>
+<input type="number" id="id_b"><br>
+<button onclick="przycisk()">walnij</button>
+    
+</body>
+</html>
